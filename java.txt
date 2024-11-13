@@ -1,0 +1,25 @@
+// script.js
+
+function mostrarLogin() {
+    alert("Función de inicio de sesión en desarrollo.");
+}
+
+function registrarTransaccion() {
+    document.getElementById("panel").style.display = "block";
+}
+
+function generarReporte() {
+    alert("Generando reporte...");
+}
+
+function verRecordatorios() {
+    alert("Mostrando recordatorios fiscales...");
+}
+
+document.getElementById("transaccionForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    const tipo = document.getElementById("tipo").value;
+    const categoria = document.getElementById("categoria").value;
+    const monto = document.getElementById("monto").value;
+    alert(`Transacción registrada: ${tipo} - ${categoria} - Monto: ${monto} Bs.`);
+});
